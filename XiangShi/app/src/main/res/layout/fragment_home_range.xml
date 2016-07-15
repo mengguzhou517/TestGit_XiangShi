@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nick.administrator.xiangshi.fragments.HomeRangeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="#f0f0f0"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:background="@drawable/font_header_theme"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/btn_home_search"
+            android:drawableLeft="@drawable/bt_title_bar_search_drawable_small_day"
+            android:hint="搜话题"
+            android:textSize="16sp"
+            android:gravity="left|center"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/search_background_shape"/>
+
+        <Button
+            android:background="#f0f0f0"
+            android:id="@+id/btn_right_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:background="@drawable/btn_header_edit"
+            android:id="@+id/btn_right_home01"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/home_tablayout"></android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_viewpager"></android.support.v4.view.ViewPager>
+</LinearLayout>

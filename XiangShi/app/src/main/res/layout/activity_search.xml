@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nick.administrator.xiangshi.activities.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_back_search"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_title_bar_back_gray"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/editText_search"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="6"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/bt_title_bar_search_drawable_small_day"
+            android:background="@drawable/search_background_shape"
+            android:hint="搜索“大杰哥我爱你”试试"
+            />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/search_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></android.support.design.widget.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/search_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>

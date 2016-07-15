@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#eee"
+    tools:context="com.nick.administrator.xiangshi.fragments.MarketFragment">
+
+    <RelativeLayout
+        android:id="@+id/layout01"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#ffffff">
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/menu"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:text="购好货"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button_gouwuche"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cart"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_search"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        android:layout_below="@id/layout01"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/search_background_shape"
+        android:hint="搜索“大杰哥我爱你”试试"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="6dp"
+        android:id="@+id/market_pager"
+        android:layout_below="@id/button_search"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/market_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="bottom"
+            app:centered="true"
+            />
+    </android.support.v4.view.ViewPager>
+
+
+
+</RelativeLayout>

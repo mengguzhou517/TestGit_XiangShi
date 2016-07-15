@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nick.administrator.xiangshi.fragments.MenuFragment">
+
+    <!-- 获取actionbar设定的高度,从系统提供的属性中获取对应的高度-->
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center"
+        android:text="饗食菜谱"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <!-- 使用design提供的TabLayout-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/menu_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </android.support.design.widget.TabLayout>
+
+    <!-- ViewPager里存放碎片的集合,碎片里放了GridView-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/menu_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v4.view.ViewPager>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myRelative"
+    tools:context="com.nick.administrator.xiangshi.fragments.MyFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/bac01"
+        android:paddingBottom="20dp">
+
+        <com.pkmmte.view.CircularImageView
+            android:onClick="onClick"
+            android:id="@+id/image_icon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/taidi"
+            app:border="true"
+            app:border_color="#EEEEEE"
+            app:border_width="4dp"
+            app:shadow="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"/>
+
+        <Button
+            android:onClick="onClick"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape"
+            android:id="@+id/my_login_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_alignTop="@+id/my_sign_button"
+            android:layout_toLeftOf="@+id/my_sign_button"
+            android:layout_toStartOf="@+id/my_sign_button" />
+
+        <Button
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape"
+            android:id="@+id/my_sign_button"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginEnd="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <GridView
+        android:listSelector="@null"
+        android:id="@+id/gridView_myFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="20dp"
+        android:stretchMode="columnWidth"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="15dp"
+        ></GridView>
+
+</RelativeLayout>
